@@ -12,23 +12,25 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: gray;
+    background:url(../img/sunny-back.jpg) no-repeat center center / cover;
 }
 
 ::placeholder{
     color: black;
     letter-spacing: 2px;
     padding: 5px;
+    font-size: 15px;
 }
 
 .main{
-    background-color: #00000066;
+    background-color: #000000db;
     color: white;
     text-align: center;
     padding: 40px;
     width: 100%;
     max-width: 500px;
     margin: 5px;
+    border-radius: 30px;
 }
 .search {
     display: flex;
@@ -41,17 +43,22 @@ body{
     padding: 10px;
     border-radius: 30px;
     border: none;
-    background-color: rgba(255, 255, 255, 0.49);
+    background-color: white;
     color: black;
     cursor: text;
 }
 .search button{
     border-radius: 30px;
-    background-color: rgba(255, 255, 255, 0.49);
+    background-color: white;
     height: 41px;
     width: 40px;
     border: none;
     cursor: pointer;
+    transition: 0.3 ease-in-out;
+}
+.search button:hover{
+    background-color: rgba(255, 255, 255, 0.503);
+    
 }
 .city-name{
     padding-top: 25px;
